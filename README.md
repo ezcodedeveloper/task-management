@@ -73,5 +73,4 @@ Here are some visual examples of the `task-management` application in action:
 *A placeholder for your task list screenshot. Replace the path with your actual image link/path.*
 
 ### Task Creation Form
-![A screenshot of the form used to create new tasks, highlighting input fields.](https://drive.google.com/file/d/1VltCWEWDQAJuYfZjR_2VJMae3Q4IqZCY/view?usp=sharing)
-*A placeholder for a screenshot of the task creation form. Replace the URL with your actual image link.*
+![My Image](https://user-images.githubusercontent.com/12345678/your-image.png)
