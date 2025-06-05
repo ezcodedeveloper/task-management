@@ -49,7 +49,10 @@ Build `task-management` from the source and install dependencies:
     ```bash
     composer install
     ```
-
+    Using `artisan`:
+    ```bash
+    php artisan migrate
+    ```
 ## Usage
 
 Run the project with:
