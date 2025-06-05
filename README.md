@@ -25,6 +25,7 @@ This project requires the following dependencies:
 
 ### Installation
 
+
 Build `task-management` from the source and install dependencies:
 
 1.  **Clone the repository:**
@@ -63,14 +64,4 @@ composer run dev
 ## Screenshots
 
 Here are some visual examples of the `task-management` application in action:
-
-### Dashboard View
-![A clean dashboard showing an overview of tasks and progress.](https://drive.google.com/file/d/1VltCWEWDQAJuYfZjR_2VJMae3Q4IqZCY/view?usp=sharing)
-*A placeholder for your dashboard screenshot. Replace the URL with your actual image link.*
-
-### Task List
-![The main task list view, displaying individual tasks, their status, and details.](https://drive.google.com/file/d/1VltCWEWDQAJuYfZjR_2VJMae3Q4IqZCY/view?usp=sharing)
-*A placeholder for your task list screenshot. Replace the path with your actual image link/path.*
-
-### Task Creation Form
-![My Image](https://user-images.githubusercontent.com/12345678/your-image.png)
+![-Laravel-06-05-2025_05_49_PM](https://github.com/user-attachments/assets/d7e8bae7-7bf3-41d4-b4ff-3af719370fc2)
