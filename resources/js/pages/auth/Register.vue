@@ -140,7 +140,7 @@ const handleSignUp = async () => {
             <div class="flex h-6 w-6 items-center justify-center rounded-md bg-pink-500 text-white">
                 <ChartBarIcon class="h-4 w-4" />
             </div>
-            <span class="text-pink-500">Tawasul</span>
+            <span class="text-pink-500">Autonomous</span>
         </div>
 
         <div class="w-full max-w-md px-4 flex flex-col items-center mt-16">

@@ -30,7 +30,7 @@ const submit = () => {
 <template>
     <div class="flex min-h-screen w-full flex-col items-center justify-center bg-white">
         <div class="absolute top-8 flex items-center gap-1.5 text-lg font-semibold">
-            <span class="text-pink-500">Tawasul</span>
+            <span class="text-pink-500">Autonomous</span>
         </div>
 
         <div class="w-full max-w-md px-4 flex flex-col items-center mt-16">
@@ -55,13 +55,6 @@ const submit = () => {
 
                 <!-- Password Input -->
                 <div class="space-y-1">
-                    <div class="flex items-center justify-between">
-                        <label for="password" class="text-sm font-medium">Password</label>
-                        <TextLink v-if="canResetPassword" :href="route('password.request')"
-                            class="text-sm text-pink-500 hover:underline">
-                            Forgot password?
-                        </TextLink>
-                    </div>
                     <input id="password" type="password" v-model="form.password"
                         class="h-12 w-full rounded-md border bg-gray-50 px-3 text-base transition-all" :class="{
                             'border-red-500 bg-red-50': form.errors.email,
