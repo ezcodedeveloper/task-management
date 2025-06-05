@@ -102,10 +102,7 @@ const handleSubmit = async () => {
         status: !form.value.status ? 'Task status is required' : '',
         priority: !form.value.priority ? 'Task priority is required' : '',
     };
-    // send to API (example using axios)
     if (Object.values(errors.value).some((err) => err)) return
-
-    // Handle sign up logic here
     try {
         const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
         const response = await fetch('/tasks/store-task', {
@@ -123,13 +120,13 @@ const handleSubmit = async () => {
             //  error
             if (response.status === 422 && data.errors) {
                 if (data.errors.title) {
-                    errors.value.title = data.errors.title[0]; // "Email already exists" or other msg
+                    errors.value.title = data.errors.title[0]; 
                 }
                 if (data.errors.status) {
-                    errors.value.status = data.errors.status[0]; // "The password field must be at least 8 characters."
+                    errors.value.status = data.errors.status[0]; 
                 }
                 if (data.errors.priority) {
-                    errors.value.priority = data.errors.priority[0]; // "The password field must be at least 8 characters."
+                    errors.value.priority = data.errors.priority[0]; 
                 }
             }
 
@@ -137,12 +134,9 @@ const handleSubmit = async () => {
         }
         // ✅ Show success toast
         toast.success(data.message)
-
         // ✅ Refresh tasks (call your fetch function)
         await fetchTasks()
         resetForm();
-        // Successful signup
-        console.log('Signed up successfully');
     } catch (error) {
         console.error('Error signing up:', error);
         // Handle network or other errors
@@ -166,8 +160,6 @@ const selectedDate = ref(null); // Initialize with null or a default date
 
 const handleDateChange = (date: Date | string | null) => {
     console.log('Date selected (raw from component):', date);
-    // 'date' here will be the formatted string if value-type is set,
-    // otherwise it would be a Date object by default.
 };
 const resetForm = () => {
     errors.value = {
@@ -215,9 +207,8 @@ const deleteTask = async (e: Event) => {
         toast.success(data.message);
         dialogOpen.value = false;
         taskToDeleteId.value = null;
-
         // refresh your task list
-        fetchTasks(); // your custom method
+        fetchTasks();
     } catch (err) {
         toast.error('Failed to delete');
     } finally {
@@ -254,7 +245,6 @@ const updateTask = async () => {
         status: !selectedTask.value.status ? 'Task status is required' : '',
         priority: !selectedTask.value.priority ? 'Task priority is required' : '',
     };
-    // send to API (example using axios)
     if (Object.values(updateErrors.value).some((err) => err)) return
     try {
         const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
@@ -306,14 +296,11 @@ select::-ms-expand {
 .mx-datepicker {
     position: relative !important;
     z-index: 9999 !important;
-    /* or higher if needed */
 }
 
 .overlapping-element {
     pointer-events: none !important;
-    /* or */
     z-index: 1 !important;
-    /* lower than .mx-datepicker */
 }
 
 .mx-input-wrapper {
@@ -327,25 +314,14 @@ select::-ms-expand {
 }
 
 .mx-datepicker-popup {
-    /* Corrected z-index property, ensure it's uncommented and spelled correctly */
     z-index: 99999999 !important;
-    /* A ridiculously high z-index to be safe */
-    /* Remove any other z-index declarations for this class */
-
-    /* Keep any other valid styles you need for the popup itself */
     position: absolute;
-    /* This should already be there, but good to ensure */
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    /* From the original CSS */
-    /* margin-top and margin-bottom are probably not needed for z-index */
 }
 </style>
-
 <template>
     <AppLayout :breadcrumbs="breadcrumbs">
-
         <Head title="Task Management" />
-
         <div class="p-6 max-w-full ">
             <!-- Search & Filters -->
             <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 mb-4 w-full">

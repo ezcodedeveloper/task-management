@@ -17,7 +17,7 @@ class TaskController extends Controller
         'title' => 'required|string|max:255',
         'description' => 'nullable|string',
         'due_date' => 'nullable|date',
-        'priority' => 'required|in:Low,Medium,High', // Adjust values as needed
+        'priority' => 'required|in:Low,Medium,High', 
         'status' => 'required|in:Pending,In Progress,Completed',
     ]);
    
@@ -50,7 +50,7 @@ class TaskController extends Controller
     }
 
     // 📦 Paginate results
-    $perPage = $request->get('per_page', 10); // Optional: frontend can send per_page
+    $perPage = $request->get('per_page', 10); 
     $tasks = $query->latest()->paginate($perPage);
 
     return response()->json($tasks);
@@ -73,7 +73,7 @@ class TaskController extends Controller
                 'title' => 'required|string|max:255',
                 'description' => 'nullable|string',
                 'due_date' => 'nullable|date',
-                'priority' => 'required|in:Low,Medium,High', // Adjust values as needed
+                'priority' => 'required|in:Low,Medium,High', 
                 'status' => 'required|in:Pending,In Progress,Completed',
     ]);
     $task = Tasks::find($request->id);
