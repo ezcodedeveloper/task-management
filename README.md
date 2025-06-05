@@ -56,3 +56,16 @@ Run the project with:
 Using `npm`:
 ```bash
 composer run dev
+```bash
+```bash
+# My Project
+
+## Screenshots
+
+Here's what our dashboard looks like:
+
+![Dashboard view of the application](https://drive.google.com/file/d/1VltCWEWDQAJuYfZjR_2VJMae3Q4IqZCY/view?usp=sharing)
+
+And here's the task list screen:
+
+![Task list screen showing various tasks](https://drive.google.com/file/d/1VltCWEWDQAJuYfZjR_2VJMae3Q4IqZCY/view?usp=sharing)
