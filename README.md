@@ -64,4 +64,11 @@ composer run dev
 ## Screenshots
 
 Here are some visual examples of the `task-management` application in action:
-![-Laravel-06-05-2025_05_49_PM](https://github.com/user-attachments/assets/d7e8bae7-7bf3-41d4-b4ff-3af719370fc2)
+![App Screenshot](public/-Laravel-06-05-2025_05_49_PM)
+![App Screenshot](public/-Laravel-06-05-2025_05_50_PM)
+![App Screenshot](public/Dashboard-Laravel-06-05-2025_05_50_PM)
+![App Screenshot](public/Task-Management-Laravel-06-05-2025_05_51_PM)
+![App Screenshot](public/Task-Management-Laravel-06-05-2025_05_51_PM (1))
+![App Screenshot](public/Task-Management-Laravel-06-05-2025_05_51_PM (2))
+![App Screenshot](public/Task-Management-Laravel-06-05-2025_05_52_PM)
+![App Screenshot](public/Task-Management-Laravel-06-05-2025_05_52_PM (1))
