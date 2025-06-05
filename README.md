@@ -62,10 +62,16 @@ composer run dev
 
 ## Screenshots
 
-Here's what our dashboard looks like:
+Here are some visual examples of the `task-management` application in action:
 
-![Dashboard view of the application](https://drive.google.com/file/d/1VltCWEWDQAJuYfZjR_2VJMae3Q4IqZCY/view?usp=sharing)
+### Dashboard View
+![A clean dashboard showing an overview of tasks and progress.](https://drive.google.com/file/d/1VltCWEWDQAJuYfZjR_2VJMae3Q4IqZCY/view?usp=sharing)
+*A placeholder for your dashboard screenshot. Replace the URL with your actual image link.*
 
-And here's the task list screen:
+### Task List
+![The main task list view, displaying individual tasks, their status, and details.](https://drive.google.com/file/d/1VltCWEWDQAJuYfZjR_2VJMae3Q4IqZCY/view?usp=sharing)
+*A placeholder for your task list screenshot. Replace the path with your actual image link/path.*
 
-![Task list screen showing various tasks](https://drive.google.com/file/d/1VltCWEWDQAJuYfZjR_2VJMae3Q4IqZCY/view?usp=sharing)
+### Task Creation Form
+![A screenshot of the form used to create new tasks, highlighting input fields.](https://drive.google.com/file/d/1VltCWEWDQAJuYfZjR_2VJMae3Q4IqZCY/view?usp=sharing)
+*A placeholder for a screenshot of the task creation form. Replace the URL with your actual image link.*
