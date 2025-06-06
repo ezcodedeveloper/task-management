@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('title');
             $table->longText('description')->nullable();
             $table->date('due_date')->nullable();
-            $table->integer('status');
-            $table->integer('priority');
+            $table->string('status');
+            $table->string('priority');
             $table->integer('userId');
             $table->timestamps();
         });
